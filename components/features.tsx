@@ -3,8 +3,9 @@
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Image from 'next/image'
-import FeaturesBg from '@/public/images/features-bg.png'
-import FeaturesElement from '@/public/images/features-element.png'
+import NatureBg from '@/public/images/nature.jpeg'
+import NorthLights from '@/public/images/north-lights.jpeg'
+import VikingsBg from '@/public/images/vikings.jpeg'
 
 export default function Features() {
   const [tab, setTab] = useState<number>(1)
@@ -33,11 +34,9 @@ export default function Features() {
         <div className="pt-12 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Explore the solutions</h1>
+            <h1 className="h2 mb-4">Features of Noarway</h1>
             <p className="text-xl text-gray-600">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
-              cupidatat.
+              Explore features about Norway
             </p>
           </div>
 
@@ -48,14 +47,6 @@ export default function Features() {
               className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6"
               data-aos="fade-right"
             >
-              <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">Powerful suite of tools</h3>
-                <p className="text-xl text-gray-600">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa.
-                </p>
-              </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
                 <a
@@ -72,11 +63,13 @@ export default function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Building the Simple ecosystem
+                      Stunning Natural Scenery
                     </div>
                     <div className="text-gray-600">
-                      Take collaboration to the next level with security and
-                      administrative features built for teams.
+                      Norway is renowned for its breathtaking natural beauty,
+                      including fjords, mountains, glaciers, and waterfalls.
+                      Tourists can enjoy activities like hiking, skiing, and
+                      fishing in these picturesque landscapes.
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
@@ -103,11 +96,14 @@ export default function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Building the Simple ecosystem
+                      Northern Lights
                     </div>
                     <div className="text-gray-600">
-                      Take collaboration to the next level with security and
-                      administrative features built for teams.
+                      Norway is one of the best places in the world to see the
+                      Aurora Borealis, or Northern Lights. From late September
+                      to early April, visitors can witness this spectacular
+                      natural light show in locations such as Tromsø, Lofoten,
+                      and the North Cape.
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
@@ -137,11 +133,13 @@ export default function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Building the Simple ecosystem
+                      Rich Viking History
                     </div>
                     <div className="text-gray-600">
-                      Take collaboration to the next level with security and
-                      administrative features built for teams.
+                      Norway has a fascinating Viking heritage that dates back
+                      to the 9th century. Tourists can explore Viking museums
+                      and historical sites such as the Viking Ship Museum in
+                      Oslo and the UNESCO-listed Bryggen wharf in Bergen.{' '}
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
@@ -183,18 +181,10 @@ export default function Features() {
                   <div className="relative inline-flex flex-col">
                     <Image
                       className="md:max-w-none mx-auto rounded"
-                      src={FeaturesBg}
+                      src={NatureBg}
                       width={500}
                       height="462"
-                      alt="Features bg"
-                    />
-                    <Image
-                      className="md:max-w-none absolute w-full left-0 transform animate-float"
-                      src={FeaturesElement}
-                      width={500}
-                      height="44"
-                      alt="Element"
-                      style={{ top: '30%' }}
+                      alt="Nature"
                     />
                   </div>
                 </Transition>
@@ -213,18 +203,10 @@ export default function Features() {
                   <div className="relative inline-flex flex-col">
                     <Image
                       className="md:max-w-none mx-auto rounded"
-                      src={FeaturesBg}
+                      src={NorthLights}
                       width={500}
                       height="462"
-                      alt="Features bg"
-                    />
-                    <Image
-                      className="md:max-w-none absolute w-full left-0 transform animate-float"
-                      src={FeaturesElement}
-                      width={500}
-                      height="44"
-                      alt="Element"
-                      style={{ top: '30%' }}
+                      alt="Lights"
                     />
                   </div>
                 </Transition>
@@ -243,18 +225,10 @@ export default function Features() {
                   <div className="relative inline-flex flex-col">
                     <Image
                       className="md:max-w-none mx-auto rounded"
-                      src={FeaturesBg}
+                      src={VikingsBg}
                       width={500}
                       height="462"
                       alt="Features bg"
-                    />
-                    <Image
-                      className="md:max-w-none absolute w-full left-0 transform animate-float"
-                      src={FeaturesElement}
-                      width={500}
-                      height="44"
-                      alt="Element"
-                      style={{ top: '30%' }}
                     />
                   </div>
                 </Transition>
